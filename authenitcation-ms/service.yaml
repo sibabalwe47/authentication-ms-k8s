@@ -3,9 +3,10 @@ kind: Service
 metadata:
   name: authentication-ms
 spec:
+  type: NodePort
   selector:
     app: authentication-ms
   ports:
   - port: 31200
     targetPort: 5000
-    type: NodePort
+    
